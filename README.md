@@ -7,4 +7,4 @@ Just unzip the and run the .bat file, you need to have installed the Java Runtim
 
 
 
-<img width="1136" height="784" alt="Screenshot 2025-10-18 145946" src="https://github.com/user-attachments/assets/8dda7852-f47d-49ae-8261-32872d1ccb97" />
+<img width="1139" height="799" alt="grafik" src="https://github.com/user-attachments/assets/68491e05-6b04-4df8-852e-46976e40bcf8" />
