@@ -78,3 +78,6 @@ Here all features
 
 <img width="1235" height="791" alt="grafik" src="https://github.com/user-attachments/assets/969f2dd7-e490-40dd-ae6d-9682cfb2c335" />
 
+<img width="2552" height="973" alt="grafik" src="https://github.com/user-attachments/assets/340e2d79-6c1c-4a9c-80a7-a4020ef99059" />
+
+
