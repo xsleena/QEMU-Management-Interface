@@ -1,82 +1,59 @@
 Dear friends, since there are no current GUI for the QEMU emulator for Windows, I decided to create one myself in Java.
 
-In this GUI, most of the options work.
+Here all options available
+
+Profiles Management:
+  - Save VM profiles
+  - Load VM profiles
+  - Delete VM profiles
+  - List all saved profiles
+  - Preview QEMU command for a profile
+
+General Settings:
+  - Set QEMU executable path
+  - Choose CPU acceleration (tcg, whpx, none, etc.)
+  - Select boot device (disk, CD-ROM, network, menu)
+  - Select machine type (pc, q35, i440fx, isapc, microvm)
+
+System Configuration:
+  - Configure memory (MB)
+  - Enable/disable memory
+  - Set CPU cores, threads per core, and sockets
+  - Select CPU model (host, EPYC, Core-i7, ARM, etc.)
+
+Storage & Firmware:
+  - Attach primary disk image
+  - Attach CD-ROM ISO
+  - Mount shared folder
+  - Enable/use OVMF BIOS
+  - Enable/use TPM socket
+  - Create new disk image (custom path, size, format)
+  - Delete VM disk
+
+Devices:
+  - Enable/disable sound
+  - Select sound backend (dsound, wasapi, sdl, none)
+  - Enable/disable USB
+  - Detect and attach USB devices automatically
+  - Select GPU (std, qxl, vmware, cirrus)
+
+Network:
+  - Enable/disable network
+  - Set network mode (user, tap, none)
+  - Configure MAC address
+
+Actions:
+  - Launch VM
+  - Preview full QEMU command (copies to clipboard)
+  - Toggle CPU acceleration (tcg ↔ whpx)
+
+GUI Features:
+  - Split panel layout: left panel for profiles, right panel for settings tabs
+  - Tabs for General, System, Storage, Devices, Network
+  - Buttons for all major actions (Save, Load, Run, Delete, Preview Cmd, etc.)
+  - Status bar showing messages
 
 
-Here all features
-
-
-1. Profiles
-- Save profile – save current VM configuration
-- Load profile – load a saved configuration
-- Delete profile – remove a saved profile
-- Profile list – view all saved profiles
-
-2. QEMU Executable
-- QEMU Path – select the QEMU executable
-- Enable/Disable QEMU – checkbox to include/exclude in command
-
-3. Virtual Disk
-- Primary Disk Image – select disk image file (.qcow2)
-- Extra Disks – add/remove multiple disks
-- Create Disk – create a new disk image using qemu-img
-- Resize/Convert/Check Disk – advanced disk tools for disk management
-- Enable/Disable Disk – checkbox to include/exclude disk in VM
-
-4. CD-ROM
-- CD Image – select ISO file
-- Enable/Disable CD-ROM – checkbox
-
-5. Shared Folder
-- Shared Folder Path – select host folder to share
-- Enable/Disable Shared Folder – checkbox
-
-6. Memory & CPU
-- Memory (MB) – input field
-- CPU Cores – input field
-- CPU Model – dropdown (host, qemu64, etc.)
-- Enable/Disable Memory & CPU – checkboxes
-
-7. GPU & Sound
-- GPU Mode – dropdown (std, qxl, virtio, etc.)
-- Sound Backend – dropdown (dsound, none, etc.)
-- Enable/Disable Sound Card – checkbox
-
-8. Boot & Acceleration
-- Boot Device – dropdown (c=HDD, d=CD-ROM, n=Network, menu)
-- Acceleration – dropdown (tcg, hax, whpx)
-- RTC – localtime (always applied)
-
-9. TPM (Trusted Platform Module)
-
-- TPM Socket Path – input field
-- Enable/Disable TPM – checkbox
-- Start TPM Emulator – optional, launches swtpm
-
-10. OVMF BIOS
-- OVMF Path – select UEFI BIOS file
-- Enable/Disable OVMF – checkbox
-
-11. Network
-- Enable/Disable Networking – checkbox
-- Default network configuration – NAT with a NIC (can be extended later)
-
-12. USB Devices
-- USB Dropdown – list detected USB devices
-- Enable/Disable USB – checkbox (USB enabled by default)
-
-13. Command Preview
-- Preview QEMU Command – show full command before launching
-- Copy to Clipboard – optional in preview dialog
-
-14. Run / Launch VM
-- Run VM – launches the VM using all selected options
-- Console output – printed in real-time to console
-
-
-
-
-<img width="1235" height="791" alt="grafik" src="https://github.com/user-attachments/assets/969f2dd7-e490-40dd-ae6d-9682cfb2c335" />
 
 <img width="2552" height="973" alt="grafik" src="https://github.com/user-attachments/assets/340e2d79-6c1c-4a9c-80a7-a4020ef99059" />
 
