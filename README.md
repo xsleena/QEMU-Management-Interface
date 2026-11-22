@@ -34,6 +34,18 @@ Here the features
 - Compact tabbed Swing GUI with live status bar feedback
 
 
-<img width="2552" height="973" alt="grafik" src="https://github.com/user-attachments/assets/340e2d79-6c1c-4a9c-80a7-a4020ef99059" />
+Requirement to Run (Windows):
+Place a portable Java (JRE) folder named "JAVA" in the same directory as QEMUManagementInterface.jar.
+
+Folder setup:
+- YourFolder/JAVA/bin/java.exe
+- YourFolder/QEMUManagementInterface.jar
+- YourFolder/run.bat
+
+Note: If you already have Java installed on your PC, edit the .bat file and replace .\JAVA\bin\java with java.
 
 
+
+
+
+<img width="862" height="508" alt="grafik" src="https://github.com/user-attachments/assets/0b43350b-e896-4c89-b14e-0a17a7e26b52" />
