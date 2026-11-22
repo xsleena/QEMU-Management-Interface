@@ -1,51 +1,28 @@
-Dear friends, since there are no current GUI for the QEMU emulator for Windows, I decided to create one myself in Java with help from AI.
+# QEMU Management Interface
 
-Here the features
+A clean, lightweight desktop GUI under Windows for configuring, managing, and launching QEMU virtual machines without memorizing complex CLI flags.
 
+## ✨ Features
 
-## Profile Management
-- Save, load (button or double-click), and delete VM profiles (`.properties`)
-- Backward-compatible support for legacy single-disk profiles
-- Dynamic UI state handling (automatically enables/disables inputs and browse buttons)
+### 🖥️ VM & Profile Management
+* **Profile System:** Save, load, and delete VM configurations as `.properties` files.
+* **Command Preview:** Inspect the generated QEMU command and auto-copy it to your clipboard.
+* **Standalone `.exe`:** Compiled for easy, ready-to-run execution without extra setup.
 
-## General & System
-- Custom QEMU executable path selector
-- Hardware acceleration modes (`whpx`, `kvm`, `hvf`, `tcg`, `none`)
-- Configurable boot target (`Disk`, `CD-ROM`, `Network`, `menu=on`) and machine type (`q35`, `pc`, `i440fx`, `isapc`, `microvm`)
-- Custom extra CLI arguments field
-- Adjustable RAM (MB), 35+ CPU models (x86, ARM, RISC-V/POWER/MIPS), and CPU topology (`Cores`, `Threads`, `Sockets`)
+### ⚙️ System & Hardware
+* **Acceleration & Machine:** Supports `whpx`, `kvm`, `hvf`, and `tcg` alongside machine types like `q35` and `pc`.
+* **CPU & Memory:** Choose from 35 CPU models, customize `Cores`/`Threads`/`Sockets`, and allocate RAM.
+* **Custom Arguments:** Pass extra QEMU CLI flags directly via the `Extra Args` field.
 
-## Multi-Disk & Storage
-- Multi-disk table supporting unlimited virtual drives per VM
-- Per-disk active toggle, boot/load order controls (`Up` / `Down`), interface (`ide`, `virtio`, `sata`, `scsi`, `nvme`), and format (`qcow2`, `raw`, `vmdk`, `vdi`)
-- Automatic bus indexing and NVMe controller assignment
-- Built-in `qemu-img` disk creation wizard and disk file deletion
-- ISO/CD-ROM mounting, Host Shared Folder (`vvfat` on Windows / `virtio-9p` on Linux/macOS), OVMF UEFI BIOS, and TPM socket support
+### 💾 Storage & Firmware
+* **Multi-Disk Support:** Attach, reorder, and toggle multiple disks (`ide`, `virtio`, `sata`, `scsi`, `nvme` / `qcow2`, `raw`, `vmdk`, `vdi`).
+* **Built-in Disk Manager:** Create new disk images via `qemu-img` or delete existing ones directly from the UI.
+* **Media, UEFI & TPM:** Mount CD/ISO images, configure `OVMF` BIOS, attach `TPM` sockets, and enable host-guest shared folders.
 
-## Devices & Network
-- Audio backend selector (`dsound`, `wasapi`, `sdl`, `pa`, `alsa`, `none`) with Intel HDA audio
-- Live Windows USB host device detection (`VID:PID` passthrough) with refresh button and `usb-tablet` fallback
-- GPU adapter selection (`std`, `virtio`, `qxl`, `vmware`, `cirrus`, `none`)
-- Network modes (`user` with `2222->22` SSH forwarding, `tap`, `none`) and custom MAC address configuration
+### 🌐 Networking & Devices
+* **Multi-NIC Support:** Add multiple network adapters (`user`, `tap`, `bridge`) with selectable models (`e1000`, `virtio-net-pci`, `rtl8139`, `vmxnet3`), random MAC generation, and `hostfwd` rules.
+* **USB, Audio & GPU:** Auto-detect host USB devices (VID/PID) for passthrough, and choose between multiple sound backends and GPU models.
 
-## Execution & Tools
-- One-click VM launch (`Run VM`)
-- Command-line preview window with automatic clipboard copy
-- Compact tabbed Swing GUI with live status bar feedback
-
-
-Requirement to Run (Windows):
-Place a portable Java (JRE) folder named "JAVA" in the same directory as QEMUManagementInterface.jar.
-
-Folder setup:
-- YourFolder/JAVA/bin/java.exe
-- YourFolder/QEMUManagementInterface.jar
-- YourFolder/run.bat
-
-Note: If you already have Java installed on your PC, edit the .bat file and replace .\JAVA\bin\java with java.
-
-
-
-
-
-<img width="862" height="508" alt="grafik" src="https://github.com/user-attachments/assets/0b43350b-e896-4c89-b14e-0a17a7e26b52" />
+<img width="884" height="550" alt="grafik" src="https://github.com/user-attachments/assets/e29846fc-fbd8-4ce9-9aa5-4803b6ccd0aa" />
+<img width="881" height="549" alt="grafik" src="https://github.com/user-attachments/assets/d9f68e49-3170-4942-a296-44dbd157877f" />
+<img width="884" height="549" alt="grafik" src="https://github.com/user-attachments/assets/fb7803d9-73c3-4967-8fdb-b42d73875db1" />
