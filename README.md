@@ -23,6 +23,7 @@ A clean, lightweight desktop GUI under Windows for configuring, managing, and la
 * **Multi-NIC Support:** Add multiple network adapters (`user`, `tap`, `bridge`) with selectable models (`e1000`, `virtio-net-pci`, `rtl8139`, `vmxnet3`), random MAC generation, and `hostfwd` rules.
 * **USB, Audio & GPU:** Auto-detect host USB devices (VID/PID) for passthrough, and choose between multiple sound backends and GPU models.
 
-<img width="884" height="550" alt="grafik" src="https://github.com/user-attachments/assets/e29846fc-fbd8-4ce9-9aa5-4803b6ccd0aa" />
-<img width="881" height="549" alt="grafik" src="https://github.com/user-attachments/assets/d9f68e49-3170-4942-a296-44dbd157877f" />
-<img width="884" height="549" alt="grafik" src="https://github.com/user-attachments/assets/fb7803d9-73c3-4967-8fdb-b42d73875db1" />
+
+<img width="885" height="590" alt="grafik" src="https://github.com/user-attachments/assets/9de80e2a-d07b-4d2f-9cec-0f96be702b1b" />
+<img width="879" height="586" alt="grafik" src="https://github.com/user-attachments/assets/83a2e47b-97dd-4135-8a8f-2f4c4d243d27" />
+<img width="881" height="588" alt="grafik" src="https://github.com/user-attachments/assets/3d99b373-b27d-45b1-88b4-af78294b6179" />
