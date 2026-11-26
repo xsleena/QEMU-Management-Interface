@@ -1,6 +1,6 @@
 # QEMU Management Interface
 
-A clean, lightweight desktop GUI under Windows for configuring, managing, and launching QEMU virtual machines without memorizing complex CLI flags.
+A clean, lightweight desktop GUI under Windows for configuring, managing, and launching QEMU virtual machines without memorizing complex CLI flags made with AI.
 
 ## ✨ Features
 
