@@ -23,6 +23,7 @@ A clean, lightweight desktop GUI built in Java for Windows to configure, manage,
 * **Multi-NIC Support:** Add multiple network adapters (`user`, `tap`, `bridge`) with selectable models (`e1000`, `virtio-net-pci`, `rtl8139`, `vmxnet3`), random MAC generation, and `hostfwd` rules.
 * **USB, Audio & GPU:** Auto-detect host USB devices (VID/PID) for passthrough, and choose between multiple sound backends and GPU models.
 
+Pictures do not show the latest version
 
 <img width="885" height="590" alt="grafik" src="https://github.com/user-attachments/assets/9de80e2a-d07b-4d2f-9cec-0f96be702b1b" />
 <img width="879" height="586" alt="grafik" src="https://github.com/user-attachments/assets/83a2e47b-97dd-4135-8a8f-2f4c4d243d27" />
